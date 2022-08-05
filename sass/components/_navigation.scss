@@ -1,0 +1,35 @@
+.navigation {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    color: var(--black-text);
+    letter-spacing: 0.02em;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color var(--animation-time) cubic-bezier(var(--cubic-value));
+
+    &:focus,
+    &:hover {
+        outline: none;
+        color: var(--active-text);
+    }
+
+    &__line {
+        position: relative;
+    }
+
+    &__line::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--active-text);
+    }
+
+}

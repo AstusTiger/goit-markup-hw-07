@@ -1,0 +1,40 @@
+.container-pluses {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-decoration: none;
+        color: var(--black-text);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        width: 270px;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.71;
+        text-decoration: none;
+        letter-spacing: 0.03em;
+        width: 270px;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 120px;
+        background-color: var(--light-background);
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+}
+
+.section-pluses {
+    padding-bottom: 0;
+}

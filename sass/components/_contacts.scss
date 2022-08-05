@@ -1,0 +1,61 @@
+.contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color var(--animation-time) cubic-bezier(var(--cubic-value));
+    display: flex;
+    color: var(--main-text);
+    align-items: center;
+
+    &:hover {
+        color: var(--active-text);
+    }
+
+    &:focus {
+        outline: none;
+        color: var(--active-text);
+    }
+
+    &:hover .icon-envelope,
+    &:hover .icon-smartphone {
+        fill: var(--active-text);
+    }
+
+    &:focus .icon-envelope,
+    &:focus .icon-smartphone {
+        fill: var(--active-text);
+    }
+}
+
+.contacts-menu {
+    display: flex;
+}
+
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+    color: var(--main-text);
+    margin-right: 10px;
+    fill: currentColor;
+    transition: fill var(--animation-time) cubic-bezier(var(--cubic-value));
+}
+
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+    color: var(--main-text);
+    margin-right: 10px;
+    fill: currentColor;
+    transition: fill var(--animation-time) cubic-bezier(var(--cubic-value));
+}
+
+.contacts-mail {
+    display: flex;
+    color: var(--main-text);
+    align-items: center;
+    margin-right: 50px;
+}
